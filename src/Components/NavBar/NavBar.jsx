@@ -107,7 +107,6 @@ const NavBar = () => {
       >
         <Typography className="p-1 font-normal">Home</Typography>
       </NavLink>
-
       <NavListMenu />
       <NavLink
         to="/services"
@@ -144,13 +143,16 @@ const NavBar = () => {
                 <span>Log In</span>
               </Button>
             </Link>
-            <Button
-              variant="gradient"
-              size="sm"
-              className="hidden lg:inline-block"
-            >
-              <span>Sign Up</span>
-            </Button>
+            <Link to="/register">
+              <Button
+                size="sm"
+                variant="text"
+                className="hidden text-white lg:inline-block"
+              >
+                <span>Register</span>
+              </Button>
+            </Link>
+            
           </div>
           <IconButton
             variant="text"
@@ -198,7 +200,7 @@ const NavBar = () => {
                 <span>Log In</span>
               </Button>
               <Button fullWidth variant="gradient" size="sm" className="">
-                <span>Sign in</span>
+                <span>Register</span>
               </Button>
             </div>
           </div>

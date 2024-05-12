@@ -3,11 +3,10 @@ import { Button, Card, Input, Typography } from "@material-tailwind/react";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import loginImg from "/login.png";
-// import { Link, useLocation, useNavigate } from "react-router-dom";
-// import { toast } from "react-toastify";
+import registerImg from "/register.png";
 
-const Login = () => {
+
+const Register = () => {
   // const location = useLocation();
   // const navigate = useNavigate();
 
@@ -53,7 +52,7 @@ const Login = () => {
         <div>
           <div className="space-y-4 mt-4">
             <Typography className="text-xl text-center md:text-2xl lg:text-3xl font-rubik font-bold text-[#30416D]">
-              Login
+              Register
             </Typography>
           </div>
 
@@ -62,6 +61,13 @@ const Login = () => {
             className="mt-4 mb-2 w-80 max-w-screen-lg sm:w-96"
           >
             <div className="mb-1 flex flex-col gap-6">
+              <Input
+                size="lg"
+                type="text"
+                label="Name"
+                variant="outlined"
+                name="name"
+              />
               <Input
                 size="lg"
                 type="email"
@@ -85,6 +91,13 @@ const Login = () => {
                   {showPassword ? <FaEye /> : <FaEyeSlash />}
                 </span>
               </div>
+              <Input
+                size="lg"
+                type="text"
+                label="Photo Url"
+                variant="outlined"
+                name="photoUrl"
+              />
             </div>
 
             <Button
@@ -92,11 +105,11 @@ const Login = () => {
               type="submit"
               className="mt-4  text-white rounded-lg  bg-gradient-to-r from-indigo-500 flex mx-auto"
             >
-              Login
+              Register
             </Button>
             
           </form>
-          <p className="my-6 text-black text-center">Or Login With Email</p>
+          <p className="my-6 text-black text-center">Or Register With Email</p>
           <div>
             <Button
               // onClick={handleGoogleLogin}
@@ -113,18 +126,18 @@ const Login = () => {
               Continue with Google
             </Button>
             <Typography color="gray" className="mt-4 text-center font-normal">
-              Don't have an account?{" "}
-              <Link to="/register">
-                <span className="font-medium text-red-900">Register</span>
+              Already have an account?{" "}
+              <Link to="/login">
+                <span className="font-medium text-red-900">Login</span>
               </Link>
             </Typography>
           </div>
         </div>
         <div>
           <img
-            src={loginImg}
+            src={registerImg}
             alt="card-image"
-            className="h-full w-full object-cover"
+            className="h-[500px] w-full object-cover"
           />
         </div>
       </Card>
@@ -132,4 +145,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
