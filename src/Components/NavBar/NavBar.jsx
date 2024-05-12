@@ -110,7 +110,7 @@ const NavBar = () => {
 
   return (
     <div>
-      <Navbar className="mx-auto sticky top-0  z-50 bg-[#57606f] rounded-none max-w-full  px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="mx-auto sticky top-0  z-50 bg-black  rounded-none max-w-full  px-4 py-2 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
