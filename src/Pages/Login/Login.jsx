@@ -1,52 +1,54 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button, Card, Input, Typography } from "@material-tailwind/react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginImg from "/login.png";
-// import { Link, useLocation, useNavigate } from "react-router-dom";
-// import { toast } from "react-toastify";
+import { toast } from "react-toastify";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-  // const location = useLocation();
-  // const navigate = useNavigate();
+
+  const {signInUser,signInWithGoogle}=useContext(AuthContext)
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(false);
 
-  // const handleGoogleLogin=()=>{
-  //   signWithGoogle()
-  //   .then((result) => {
-  //     console.log(result.user);
-  //     navigate(location?.state ? location.state : "/");
-  //     toast.success("Login successful!",{
-  //       position: "top-left"
-  //     })
-  //   })
-  //   .catch(error=>{
-  //     console.error(error)
-  //   })
-  // }
+  const handleGoogleLogin=()=>{
+    signInWithGoogle()
+    .then((result) => {
+      console.log(result.user);
+      navigate(location?.state ? location.state : "/");
+      toast.success("Login successful!",{
+        position: "top-left"
+      })
+    })
+    .catch(error=>{
+      console.error(error)
+    })
+  }
 
-  // const handleLogin = (e) => {
-  //   e.preventDefault();
-  //   const form = new FormData(e.currentTarget);
-  //   const email = form.get("email");
-  //   const password = form.get("password");
-  //   console.log(email, password);
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+    console.log(email, password);
 
-  //   signInUser(email, password)
-  //     .then((result) => {
-  //       console.log(result.user);
-  //       navigate(location?.state ? location.state : "/");
-  //       toast.success("Login successful!",{
-  //         position: "top-left"
-  //       })
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //       toast.error("Please provide valid email & password");
-  //     });
-  // };
+    signInUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/");
+        toast.success("Login successful!",{
+          position: "top-left"
+        })
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Please provide valid email & password");
+      });
+  };
   return (
     <div>
       <Card className="container mx-auto pl-44 md:pl-36 lg:pl-36 min-h-[calc(100vh-312px)] items-center justify-center shadow-none gap-48  flex-row">
@@ -58,7 +60,7 @@ const Login = () => {
           </div>
 
           <form
-            // onSubmit={handleLogin}
+            onSubmit={handleLogin}
             className="mt-4 mb-2 w-80 max-w-screen-lg sm:w-96"
           >
             <div className="mb-1 flex flex-col gap-6">
@@ -99,7 +101,7 @@ const Login = () => {
           <p className="my-6 text-black text-center">Or Login With Email</p>
           <div>
             <Button
-              // onClick={handleGoogleLogin}
+              onClick={handleGoogleLogin}
               size="lg"
               variant="outlined"
               color="blue-gray"
