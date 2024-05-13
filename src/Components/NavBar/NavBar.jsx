@@ -20,7 +20,6 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 function ProfileMenu() {
   const { user, logOut } = useContext(AuthContext);
-  // console.log(user);
   const handleLogout = () => {
     logOut();
   };
@@ -198,27 +197,6 @@ const NavBar = () => {
             <span className="text-[#FBA529]">Electro</span>Care
           </Typography>
           <div className="hidden lg:block">{navList}</div>
-          {/* <div className="flex items-center gap-x-1">
-            <Link to="/login">
-              <Button
-                size="sm"
-                variant="text"
-                className="hidden text-white lg:inline-block"
-              >
-                <span>Log In</span>
-              </Button>
-            </Link>
-            <Link to="/register">
-              <Button
-                size="sm"
-                variant="text"
-                className="hidden text-white lg:inline-block"
-              >
-                <span>Register</span>
-              </Button>
-            </Link>
-            
-          </div> */}
 
           <div className="hidden lg:block">
             {user ? (
@@ -286,13 +264,6 @@ const NavBar = () => {
           <div className="container mx-auto">
             {navList}
             <div className="flex items-center gap-x-1">
-              {/* <Button fullWidth variant="text" size="sm" className="text-white">
-                <span>Log In</span>
-              </Button>
-              <Button fullWidth variant="gradient" size="sm" className="text-white">
-                <span>Register</span>
-              </Button> */}
-
               {user ? (
                 <div className="flex w-full flex-row justify-end">
                   <ProfileMenu />

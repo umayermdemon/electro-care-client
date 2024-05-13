@@ -1,0 +1,170 @@
+[
+  {
+    "serviceProviderName": "TechCare Solutions",
+    "serviceProviderImage": "provider_images/techcare_solutions.jpg",
+    "serviceLocation": "Downtown Electronics Repair",
+    "singleService": {
+      "serviceImage": "service_images/screen_replacement.jpg",
+      "serviceName": "Screen Replacement",
+      "serviceDescription": "Professional screen replacement service for smartphones, tablets, and laptops.",
+      "serviceProviderInfo": {
+        "image": "provider_images/techcare_solutions.jpg",
+        "name": "TechCare Solutions"
+      },
+      "servicePrice": "$50",
+      "bookNowButtonColor": "#42A5F5",
+      "providerEmail": "techcare@example.com",
+      "providerName": "TechCare Solutions",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#66BB6A"
+    }
+  },
+  {
+    "serviceProviderName": "GadgetFix Experts",
+    "serviceProviderImage": "provider_images/gadgetfix_experts.jpg",
+    "serviceLocation": "GadgetGenius Repairs",
+    "singleService": {
+      "serviceImage": "service_images/battery_replacement.jpg",
+      "serviceName": "Battery Replacement",
+      "serviceDescription": "Get your device's battery replaced by our certified technicians using genuine parts.",
+      "serviceProviderInfo": {
+        "image": "provider_images/gadgetfix_experts.jpg",
+        "name": "GadgetFix Experts"
+      },
+      "servicePrice": "$40",
+      "bookNowButtonColor": "#FFA726",
+      "providerEmail": "gadgetfix@example.com",
+      "providerName": "GadgetFix Experts",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#EF5350"
+    }
+  },
+  {
+    "serviceProviderName": "E-Tech Repairs",
+    "serviceProviderImage": "provider_images/e_tech_repairs.jpg",
+    "serviceLocation": "E-Tech Repair Center",
+    "singleService": {
+      "serviceImage": "service_images/charging_port_repair.jpg",
+      "serviceName": "Charging Port Repair",
+      "serviceDescription": "Expert repair service for damaged charging ports on smartphones and tablets.",
+      "serviceProviderInfo": {
+        "image": "provider_images/e_tech_repairs.jpg",
+        "name": "E-Tech Repairs"
+      },
+      "servicePrice": "$30",
+      "bookNowButtonColor": "#4CAF50",
+      "providerEmail": "etech@example.com",
+      "providerName": "E-Tech Repairs",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#42A5F5"
+    }
+  },
+  {
+    "serviceProviderName": "FixitNow Services",
+    "serviceProviderImage": "provider_images/fixitnow_services.jpg",
+    "serviceLocation": "FixitNow Service Center",
+    "singleService": {
+      "serviceImage": "service_images/software_update.jpg",
+      "serviceName": "Software Update",
+      "serviceDescription": "Keep your devices up-to-date with the latest software versions for improved performance and security.",
+      "serviceProviderInfo": {
+        "image": "provider_images/fixitnow_services.jpg",
+        "name": "FixitNow Services"
+      },
+      "servicePrice": "$20",
+      "bookNowButtonColor": "#FF7043",
+      "providerEmail": "fixitnow@example.com",
+      "providerName": "FixitNow Services",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#66BB6A"
+    }
+  },
+  {
+    "serviceProviderName": "QuickFix Repairs",
+    "serviceProviderImage": "provider_images/quickfix_repairs.jpg",
+    "serviceLocation": "QuickFix Repair Shop",
+    "singleService": {
+      "serviceImage": "service_images/water_damage_repair.jpg",
+      "serviceName": "Water Damage Repair",
+      "serviceDescription": "Professional repair service for devices damaged by water or liquid spills.",
+      "serviceProviderInfo": {
+        "image": "provider_images/quickfix_repairs.jpg",
+        "name": "QuickFix Repairs"
+      },
+      "servicePrice": "$60",
+      "bookNowButtonColor": "#FFA726",
+      "providerEmail": "quickfix@example.com",
+      "providerName": "QuickFix Repairs",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#42A5F5"
+    }
+  },
+  {
+    "serviceProviderName": "TechSavvy Solutions",
+    "serviceProviderImage": "provider_images/techsavvy_solutions.jpg",
+    "serviceLocation": "TechSavvy Repair Center",
+    "singleService": {
+      "serviceImage": "service_images/screen_repair.jpg",
+      "serviceName": "Screen Repair",
+      "serviceDescription": "Professional repair service for cracked or damaged screens on smartphones and tablets.",
+      "serviceProviderInfo": {
+        "image": "provider_images/techsavvy_solutions.jpg",
+        "name": "TechSavvy Solutions"
+      },
+      "servicePrice": "$70",
+      "bookNowButtonColor": "#4CAF50",
+      "providerEmail": "techsavvy@example.com",
+      "providerName": "TechSavvy Solutions",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#EF5350"
+    }
+  },
+  {
+    "serviceProviderName": "FixRight Repairs",
+    "serviceProviderImage": "provider_images/fixright_repairs.jpg",
+    "serviceLocation": "FixRight Repair Shop",
+    "singleService": {
+      "serviceImage": "service_images/camera_repair.jpg",
+      "serviceName": "Camera Repair",
+      "serviceDescription": "Expert repair service for cameras on smartphones and digital cameras.",
+      "serviceProviderInfo": {
+        "image": "provider_images/fixright_repairs.jpg",
+        "name": "FixRight Repairs"
+      },
+      "servicePrice": "$50",
+      "bookNowButtonColor": "#66BB6A",
+      "providerEmail": "fixright@example.com",
+      "providerName": "FixRight Repairs",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#FF7043"
+    }
+  },
+  {
+    "serviceProviderName": "RapidFix Solutions",
+    "serviceProviderImage": "provider_images/rapidfix_solutions.jpg",
+    "serviceLocation": "RapidFix Repair Center",
+    "singleService": {
+      "serviceImage": "service_images/data_recovery.jpg",
+      "serviceName": "Data Recovery",
+      "serviceDescription": "Professional data recovery service for lost or corrupted data on storage devices.",
+      "serviceProviderInfo": {
+        "image": "provider_images/rapidfix_solutions.jpg",
+        "name": "RapidFix Solutions"
+      },
+      "servicePrice": "$80",
+      "bookNowButtonColor": "#FFA726",
+      "providerEmail": "rapidfix@example.com",
+      "providerName": "RapidFix Solutions",
+      "currentUserEmail": "",
+      "currentUserName": "",
+      "purchaseButtonColor": "#FF7043"
+    }
+  }
+]
