@@ -11,6 +11,7 @@ import ManageService from "../Pages/ManageService/ManageService";
 import BookedServices from "../Pages/BookedServices/BookedServices";
 import ServiceToDo from "../Pages/ServiceToDo/ServiceToDo";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
+import BookedForm from "../Pages/BookedForm/BookedForm";
 
 const router=createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router=createBrowserRouter([
         path:'/viewDetails/:id',
         element:<PrivateRoute><ViewDetails/></PrivateRoute>,
         loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+      },
+      {
+        path:'/bookedForm',
+        element:<PrivateRoute><BookedForm/></PrivateRoute>
       },
     ]
   }
