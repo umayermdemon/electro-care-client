@@ -47,7 +47,7 @@ const AddService = () => {
   return (
     <div className="bg-white container mx-auto ">
       <h1 className="text-center text-4xl font-bold text-blue-900 my-4">Add Your Service</h1>
-      <form onSubmit={handleAddService} className="border border-blue-900 space-y-8 rounded-xl h-[510px] p-8 my-4">
+      <form onSubmit={handleAddService} className="border border-blue-900 space-y-8 rounded-xl h-[513px] p-8 pt-16 my-4">
         <div className="flex flex-row gap-8 ">
           <Input name="serviceName"  label="Service Name" size="lg"/>
           <Input name="serviceArea"  label="Service Area" size="lg"/>

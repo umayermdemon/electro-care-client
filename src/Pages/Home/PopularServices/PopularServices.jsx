@@ -20,7 +20,7 @@ const PopularServices = () => {
       <h1 className="text-2xl font-bold text-center mb-6 p-2 rounded-full  bg-gradient-to-l from-indigo-500">
       What Kind of Repairs Can We Do?
       </h1>
-      <div className="grid grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {services?.slice(0, 6).map((service, idx) => (
           <PopularService key={idx} service={service}></PopularService>
         ))}

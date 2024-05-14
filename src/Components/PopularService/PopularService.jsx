@@ -32,7 +32,7 @@ const PopularService = ({ service }) => {
       <Card
         color="transparent"
         shadow={false}
-        className="w-full max-w-[26rem] border px-4 h-80"
+        className="w-full max-w-[26rem] border-2 border-gray-300 px-4 h-80"
       >
         <CardHeader
           color="transparent"
@@ -72,7 +72,7 @@ const PopularService = ({ service }) => {
             
           </div>
           <div className="mt-2">
-            <Button fullWidth>View Details</Button>
+            <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>View Details</Button>
           </div>
         </CardBody>
       </Card>
