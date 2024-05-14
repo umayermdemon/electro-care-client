@@ -47,7 +47,6 @@ function ProfileMenu() {
               src="https://i.ibb.co/ZWrTthm/About-User.jpg"
             />
           )}
-         
         </MenuHandler>
         <MenuList>
           <MenuItem className="flex items-center gap-2 ">
@@ -84,7 +83,7 @@ function NavListMenu() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (
     <MenuItem className="flex flex-col  gap-3 rounded-lg">
-      <Link to="/addService" >
+      <Link to="/addService">
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Add Service
         </Button>
@@ -172,9 +171,7 @@ const NavBar = () => {
       >
         <Typography className="p-1 font-normal">Home</Typography>
       </NavLink>
-      {
-        user&& <NavListMenu />
-      }
+      {user && <NavListMenu />}
       <NavLink
         to="/services"
         className={({ isActive }) =>
@@ -192,13 +189,14 @@ const NavBar = () => {
     <div className="bg-[#1C2430]">
       <Navbar className="mx-auto sticky top-0  z-50 rounded-none border-none bg-[#1C2430] max-w-full shadow-none  px-4 py-2 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4 cursor-pointer text-3xl text-white py-1.5 font-bold"
-          >
-            <span className="text-[#FBA529]">Electro</span>Care
-          </Typography>
+          <Link to='/'>
+            <Typography
+              as="a"
+              className="mr-4 cursor-pointer text-3xl text-white py-1.5 font-bold"
+            >
+              <span className="text-[#FBA529]">Electro</span>Care
+            </Typography>
+          </Link>
           <div className="hidden lg:block">{navList}</div>
 
           <div className="hidden lg:block">

@@ -23,7 +23,7 @@ const ViewDetails = () => {
 
   return (
     <div>
-      <Card className=" max-w-full lg:h-[577px] mx-2 lg:mx-6 my-3 border border-red-900 lg:flex-row">
+      <Card className=" max-w-full lg:h-[577px] mx-2 lg:mx-6 my-3  lg:flex-row">
         <CardHeader
           shadow={false}
           floated={false}

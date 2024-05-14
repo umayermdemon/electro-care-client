@@ -1,12 +1,13 @@
 import { Button, Input } from "@material-tailwind/react";
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import {  useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const BookedForm = () => {
   const {user}=useContext(AuthContext);
-  console.log(user.displayName)
+  const navigate=useNavigate()
   const service=useLoaderData()
   const {
     _id,
@@ -27,6 +28,7 @@ const BookedForm = () => {
     const providerEmail = form.providerEmail.value;
     const serviceTakingDate = form.serviceTakingDate.value;
     const specialInstruction = form.specialInstruction.value;
+    const serviceStatus="Pending"
     const bookedService = {
       serviceId,
       serviceName,
@@ -36,8 +38,32 @@ const BookedForm = () => {
       providerEmail,
       serviceTakingDate,
       specialInstruction,
+      serviceStatus
     };
     console.log(bookedService);
+
+    fetch('http://localhost:5000/booked',{
+      method:'POST',
+      headers:{
+        'content-type':'application/json'
+      },
+      body: JSON.stringify(bookedService)
+
+    })
+    .then(res=>res.json())
+    .then(data=>{
+      if(data.insertedId){
+        Swal.fire({
+          title: 'Success!',
+          text: 'Service Successfully Booked ',
+          icon: 'success',
+        })
+        
+      }
+      navigate('/bookedServices')
+
+    })
+
     
   };
   return (
@@ -71,11 +97,13 @@ const BookedForm = () => {
             type="date"
             label="Service Taking Date"
             size="lg"
+            required
           />
           <Input
             name="specialInstruction"
             label="Special instruction"
             size="lg"
+            
           />
         </div>
         <div className="flex items-center justify-center">
