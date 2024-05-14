@@ -19,7 +19,7 @@ const ShortedDescription = ({ description, maxLength = 100 }) => {
   );
 };
 
-const PopularService = ({ service }) => {
+const Service = ({service}) => {
   const {
     serviceName,
     imageUrl,
@@ -30,7 +30,7 @@ const PopularService = ({ service }) => {
   } = service;
   return (
     <div>
-      <Card
+       <Card
         color="transparent"
         shadow={false}
         className="w-full max-w-[26rem] border-2 border-gray-300 px-4 h-80"
@@ -80,9 +80,8 @@ const PopularService = ({ service }) => {
     </div>
   );
 };
-
-PopularService.propTypes={
+Service.propTypes={
   service:PropTypes.object,
 }
 
-export default PopularService;
+export default Service;

@@ -51,7 +51,7 @@ const Login = () => {
   };
   return (
     <div>
-      <Card className="container mx-auto pl-44 md:pl-36 lg:pl-36 min-h-[calc(100vh-312px)] items-center justify-center shadow-none gap-48  flex-row">
+      <Card className="container mx-auto pl-44 md:pl-36 lg:pl-36 min-h-[calc(100vh-310px)] items-center justify-center shadow-none gap-48  flex-row">
         <div>
           <div className="space-y-4 mt-4">
             <Typography className="text-xl text-center md:text-2xl lg:text-3xl font-rubik font-bold text-[#30416D]">

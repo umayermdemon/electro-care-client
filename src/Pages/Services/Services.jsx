@@ -1,14 +1,19 @@
 import { useLoaderData } from "react-router-dom";
-
+import Service from "../../Components/Service/Service";
 
 const Services = () => {
-
-  const services=useLoaderData()
-  console.log(services)
+  const services = useLoaderData();
 
   return (
-    <div>
-      
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold text-center my-8 bg-gradient-to-r from-indigo-500 p-2 rounded-full">
+        All Services
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mb-4 gap-8">
+        {services.map((service, idx) => (
+          <Service key={idx} service={service}></Service>
+        ))}
+      </div>
     </div>
   );
 };

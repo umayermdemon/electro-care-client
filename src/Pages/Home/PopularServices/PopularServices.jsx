@@ -11,7 +11,6 @@ const PopularServices = () => {
       .then((data) => setServices(data));
   }, []);
 
-  console.log(services);
   return (
     <div className="flex flex-col items-center justify-center">
       <h1 className="text-5xl font-bold text-center my-8 bg-gradient-to-r from-indigo-500 p-2 rounded-full">
