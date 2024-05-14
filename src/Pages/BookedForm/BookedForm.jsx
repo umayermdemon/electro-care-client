@@ -35,7 +35,7 @@ const BookedForm = () => {
       serviceImage,
       price,
       providerName,
-      providerEmail,
+      email:providerEmail,
       serviceTakingDate,
       specialInstruction,
       serviceStatus
