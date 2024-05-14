@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import {
   Avatar,
   Button,
@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { shortText } from "../../Utils/shortedText";
+import { Link } from "react-router-dom";
 
 const ShortedDescription = ({ description, maxLength = 100 }) => {
   const shortedDescription = shortText(description, maxLength);
@@ -19,7 +20,7 @@ const ShortedDescription = ({ description, maxLength = 100 }) => {
   );
 };
 
-const Service = ({service}) => {
+const Service = ({ service }) => {
   const {
     serviceName,
     imageUrl,
@@ -27,10 +28,11 @@ const Service = ({service}) => {
     description,
     providerImage,
     providerName,
+    _id
   } = service;
   return (
     <div>
-       <Card
+      <Card
         color="transparent"
         shadow={false}
         className="w-full max-w-[26rem] border-2 border-gray-300 px-4 h-80"
@@ -66,22 +68,25 @@ const Service = ({service}) => {
             ></ShortedDescription>
           </Typography>
           <div className="flex flex-row items-center justify-end gap-4">
-          <h2>{providerName}</h2>
+            <h2>{providerName}</h2>
             <div>
               <img src={providerImage} alt="" className="h-12 rounded-full" />
             </div>
-            
           </div>
           <div className="mt-2">
-            <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>View Details</Button>
+            <Link to={`/viewDetails/${_id}`}>
+              <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>
+                View Details
+              </Button>
+            </Link>
           </div>
         </CardBody>
       </Card>
     </div>
   );
 };
-Service.propTypes={
-  service:PropTypes.object,
-}
+Service.propTypes = {
+  service: PropTypes.object,
+};
 
 export default Service;
