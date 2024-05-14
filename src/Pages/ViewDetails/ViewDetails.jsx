@@ -10,6 +10,7 @@ import { Link, useLoaderData } from "react-router-dom";
 const ViewDetails = () => {
   const service = useLoaderData();
   const {
+    _id,
     imageUrl,
     price,
     providerImage,
@@ -59,7 +60,7 @@ const ViewDetails = () => {
             </div>
           </div>
           <div className="flex items-center justify-center mt-8">
-            <Link to="/bookedForm">
+            <Link to={`/bookedForms/${_id}`}>
               <Button
                 variant="gradient"
                 className="bg-gradient-to-r from-indigo-500"

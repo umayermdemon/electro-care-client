@@ -58,8 +58,9 @@ const router=createBrowserRouter([
         loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
       },
       {
-        path:'/bookedForm',
-        element:<PrivateRoute><BookedForm/></PrivateRoute>
+        path:'/bookedForms/:id',
+        element:<PrivateRoute><BookedForm/></PrivateRoute>,
+        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
       },
     ]
   }

@@ -1,6 +1,21 @@
 import { Button, Input } from "@material-tailwind/react";
+import { useContext } from "react";
+import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
+
 
 const BookedForm = () => {
+  const {user}=useContext(AuthContext);
+  console.log(user.displayName)
+  const service=useLoaderData()
+  const {
+    _id,
+    imageUrl,
+    price,
+    providerEmail,
+    providerName,
+    serviceName,
+  } = service;
   const handleModal = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -23,6 +38,7 @@ const BookedForm = () => {
       specialInstruction,
     };
     console.log(bookedService);
+    
   };
   return (
     <div className="bg-white container mx-auto">
@@ -34,16 +50,20 @@ const BookedForm = () => {
         className="border border-blue-900 space-y-8 rounded-xl h-[513px] p-8 pt-16 my-4"
       >
         <div className="flex flex-row gap-2 ">
-          <Input name="serviceId" label="Service Id" size="lg" />
-          <Input name="serviceName" label="Service Name" size="lg" />
+          <Input name="serviceId" label="Service Id" size="lg"     defaultValue={_id} readOnly/>
+          <Input name="serviceName" label="Service Name" size="lg" defaultValue={serviceName} readOnly/>
         </div>
         <div className="flex flex-row gap-2 ">
-          <Input name="serviceImage" label="Service Image" size="lg" />
-          <Input name="price" label="Price" size="lg" />
+          <Input name="serviceImage" label="Service Image" size="lg" defaultValue={imageUrl} readOnly/>
+          <Input name="price" label="Price" size="lg"  defaultValue={price} readOnly/>
         </div>
         <div className="flex flex-row gap-2 ">
-          <Input name="providerName" label="Provider Name" size="lg" />
-          <Input name="providerEmail" label="Provider Email" size="lg" />
+          <Input name="providerName" label="Provider Name" size="lg"   defaultValue={providerName} readOnly/>
+          <Input name="providerEmail" label="Provider Email" size="lg" defaultValue={providerEmail}  readOnly/>
+        </div>
+        <div className="flex flex-row gap-2 ">
+          <Input name="currentUserName" label="Current User Name" size="lg"   defaultValue={user.displayName} readOnly/>
+          <Input name="currentUserEmail" label="Current User Email" size="lg" defaultValue={user.email}  readOnly/>
         </div>
         <div className="flex flex-row gap-2 ">
           <Input

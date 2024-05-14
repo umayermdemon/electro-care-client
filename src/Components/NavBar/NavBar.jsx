@@ -20,7 +20,6 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 function ProfileMenu() {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user)
   const handleLogout = () => {
     logOut();
   };

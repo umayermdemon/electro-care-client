@@ -5,7 +5,8 @@ import Swal from "sweetalert2";
 
 const AddService = () => {
 
-  const {user}=useContext(AuthContext)
+  const {user}=useContext(AuthContext);
+  
 
   const handleAddService=e=>{
     e.preventDefault();
@@ -45,14 +46,14 @@ const AddService = () => {
   }
 
   return (
-    <div className="bg-white container mx-auto ">
+    <div className="bg-white md:container lg:container mx-2 md:mx-auto lg:mx-auto ">
       <h1 className="text-center text-4xl font-bold text-blue-900 my-4">Add Your Service</h1>
-      <form onSubmit={handleAddService} className="border border-blue-900 space-y-8 rounded-xl h-[513px] p-8 pt-16 my-4">
-        <div className="flex flex-row gap-8 ">
+      <form onSubmit={handleAddService} className="border border-blue-900 space-y-4 lg:space-y-8 rounded-xl lg:h-[513px] p-4 lg:p-8 lg:pt-16 my-4">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8">
           <Input name="serviceName"  label="Service Name" size="lg"/>
           <Input name="serviceArea"  label="Service Area" size="lg"/>
         </div>
-        <div className="flex flex-row gap-8 ">
+        <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8 ">
           <Input name="imageUrl"  label="Image Url" size="lg"/>
           <Input name="price"  label="Price" size="lg"/>
         </div>
