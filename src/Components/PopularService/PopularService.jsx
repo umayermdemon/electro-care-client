@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import {
   Avatar,
   Button,
@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import { shortText } from "../../Utils/shortedText";
+import { Link } from "react-router-dom";
 
 const ShortedDescription = ({ description, maxLength = 100 }) => {
   const shortedDescription = shortText(description, maxLength);
@@ -27,6 +28,7 @@ const PopularService = ({ service }) => {
     description,
     providerImage,
     providerName,
+    _id
   } = service;
   return (
     <div>
@@ -66,14 +68,17 @@ const PopularService = ({ service }) => {
             ></ShortedDescription>
           </Typography>
           <div className="flex flex-row items-center justify-end gap-4">
-          <h2>{providerName}</h2>
+            <h2>{providerName}</h2>
             <div>
               <img src={providerImage} alt="" className="h-12 rounded-full" />
             </div>
-            
           </div>
           <div className="mt-2">
-            <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>View Details</Button>
+            <Link to={`/viewDetails/${_id}`}>
+              <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>
+                View Details
+              </Button>
+            </Link>
           </div>
         </CardBody>
       </Card>
@@ -81,8 +86,8 @@ const PopularService = ({ service }) => {
   );
 };
 
-PopularService.propTypes={
-  service:PropTypes.object,
-}
+PopularService.propTypes = {
+  service: PropTypes.object,
+};
 
 export default PopularService;

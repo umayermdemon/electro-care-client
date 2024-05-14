@@ -41,13 +41,13 @@ const BookedForm = () => {
     
   };
   return (
-    <div className="bg-white container mx-auto">
-      <h1 className="text-center text-4xl font-bold text-blue-900 my-4">
+    <div className="bg-white md:container lg:container mx-1 md:mx-auto lg:mx-auto">
+      <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
         Book Your Service
       </h1>
       <form
         onSubmit={handleModal}
-        className="border border-blue-900 space-y-8 rounded-xl h-[513px] p-8 pt-16 my-4"
+        className="border border-blue-900 space-y-4 lg:space-y-8 rounded-xl lg:h-[513px] p-1 md:p-8 lg:p-8 pt-8 lg:pt-16 my-4"
       >
         <div className="flex flex-row gap-2 ">
           <Input name="serviceId" label="Service Id" size="lg"     defaultValue={_id} readOnly/>

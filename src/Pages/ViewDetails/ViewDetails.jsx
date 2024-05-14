@@ -35,7 +35,7 @@ const ViewDetails = () => {
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody className="p-2">
+        <CardBody className="p-2 lg:p-4">
           <Typography variant="h4" color="blue-gray" className="mb-2">
             {serviceName}
           </Typography>
