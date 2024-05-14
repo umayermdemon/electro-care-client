@@ -115,9 +115,9 @@ const Login = () => {
               Continue with Google
             </Button>
             <Typography color="gray" className="mt-4 text-center font-normal">
-              Don't have an account?{" "}
+             Are you new?{" "}
               <Link to="/register">
-                <span className="font-medium text-red-900">Register</span>
+                <span className="font-medium text-red-900 underline">Create an account</span>
               </Link>
             </Typography>
           </div>

@@ -1,10 +1,11 @@
 import Banner from "../Banner/Banner";
+import PopularServices from "../PopularServices/PopularServices";
 
 const Home = () => {
   return (
     <div>
       <Banner/>
-      <h1>dhczl</h1>
+      <PopularServices/>
     </div>
   );
 };

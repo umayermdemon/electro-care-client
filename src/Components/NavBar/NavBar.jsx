@@ -20,6 +20,7 @@ import { AuthContext } from "../../Provider/AuthProvider";
 
 function ProfileMenu() {
   const { user, logOut } = useContext(AuthContext);
+  console.log(user)
   const handleLogout = () => {
     logOut();
   };
@@ -47,6 +48,7 @@ function ProfileMenu() {
               src="https://i.ibb.co/ZWrTthm/About-User.jpg"
             />
           )}
+         
         </MenuHandler>
         <MenuList>
           <MenuItem className="flex items-center gap-2 ">
@@ -82,23 +84,23 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = (
-    <MenuItem className="flex flex-col  gap-3 rounded-lg bg-white">
-      <Link to="/addService" color="red">
+    <MenuItem className="flex flex-col  gap-3 rounded-lg">
+      <Link to="/addService" >
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Add Service
         </Button>
       </Link>
-      <Link to="/addService">
+      <Link to="/manageService">
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Manage Service
         </Button>
       </Link>
-      <Link to="/addService">
+      <Link to="/bookedServices">
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Booked Services
         </Button>
       </Link>
-      <Link to="/addService">
+      <Link to="/serviceToDo">
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Services-To-Do{" "}
         </Button>{" "}
@@ -171,7 +173,9 @@ const NavBar = () => {
       >
         <Typography className="p-1 font-normal">Home</Typography>
       </NavLink>
-      <NavListMenu />
+      {
+        user&& <NavListMenu />
+      }
       <NavLink
         to="/services"
         className={({ isActive }) =>
@@ -187,7 +191,7 @@ const NavBar = () => {
 
   return (
     <div className="bg-[#1C2430]">
-      <Navbar className="mx-auto sticky top-0  z-50 rounded-none bg-[#1C2430] max-w-full shadow-none  px-4 py-2 lg:px-8 lg:py-4">
+      <Navbar className="mx-auto sticky top-0  z-50 rounded-none border-none bg-[#1C2430] max-w-full shadow-none  px-4 py-2 lg:px-8 lg:py-4">
         <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"

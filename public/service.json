@@ -1,170 +1,83 @@
 [
   {
-    "serviceProviderName": "TechCare Solutions",
-    "serviceProviderImage": "provider_images/techcare_solutions.jpg",
-    "serviceLocation": "Downtown Electronics Repair",
-    "singleService": {
-      "serviceImage": "service_images/screen_replacement.jpg",
-      "serviceName": "Screen Replacement",
-      "serviceDescription": "Professional screen replacement service for smartphones, tablets, and laptops.",
-      "serviceProviderInfo": {
-        "image": "provider_images/techcare_solutions.jpg",
-        "name": "TechCare Solutions"
-      },
-      "servicePrice": "$50",
-      "bookNowButtonColor": "#42A5F5",
-      "providerEmail": "techcare@example.com",
-      "providerName": "TechCare Solutions",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#66BB6A"
-    }
+    "imageUrl": "https://i.ibb.co/kJ9n0F0/Screen-Replacement.jpg",
+    "serviceName": "Screen Replacement",
+    "price": "$50",
+    "serviceArea": "Central Electronics Repair Center",
+    "description": "Our Screen Replacement service offers a seamless solution for cracked or damaged screens on smartphones, tablets, and laptops. At Electro Care, our skilled technicians use high-quality replacement parts and state-of-the-art tools to ensure a precise and reliable repair. Whether your device has a minor crack or a completely shattered screen, we have the expertise to restore it to its original condition. With our quick turnaround time and competitive pricing, Electro Care is your trusted partner for all screen replacement needs. Say goodbye to frustrating cracks and hello to a pristine display with Electro Care's Screen Replacement service.",
+    "providerEmail": "mamudmdemon@gmail.com",
+    "providerImage": "https://lh3.googleusercontent.com/a/ACg8ocKypKOIIu1WnANTGCJlz-5gz6PL6DE4sCOAKzmo7Li58Yl6cZdh=s96-c",
+    "providerName": "MD. EMON MIAH"
+  },
+
+  {
+    "imageUrl": "https://i.ibb.co/K6qzRxK/Battery-Replacement.jpg",
+    "serviceName": "Battery Replacement",
+    "price": "$40",
+    "serviceArea": "Electro Care Repair Shop",
+    "description": "Is your device struggling to hold a charge? Our Battery Replacement service is the perfect solution to restore your device's battery life and performance. At Electro Care, we use genuine replacement batteries and follow industry-leading techniques to ensure a safe and efficient battery replacement process. Whether you're experiencing rapid battery drain or your device won't turn on at all, our experienced technicians can diagnose the issue and provide a reliable battery replacement. Don't let a dying battery hold you back – trust Electro Care for all your battery replacement needs.",
+    "providerEmail": "mamudemon@gmail.com",
+    "providerImage": "https://i.ibb.co/ZWrTthm/About-User.jpg",
+    "providerName": "Usama"
   },
   {
-    "serviceProviderName": "GadgetFix Experts",
-    "serviceProviderImage": "provider_images/gadgetfix_experts.jpg",
-    "serviceLocation": "GadgetGenius Repairs",
-    "singleService": {
-      "serviceImage": "service_images/battery_replacement.jpg",
-      "serviceName": "Battery Replacement",
-      "serviceDescription": "Get your device's battery replaced by our certified technicians using genuine parts.",
-      "serviceProviderInfo": {
-        "image": "provider_images/gadgetfix_experts.jpg",
-        "name": "GadgetFix Experts"
-      },
-      "servicePrice": "$40",
-      "bookNowButtonColor": "#FFA726",
-      "providerEmail": "gadgetfix@example.com",
-      "providerName": "GadgetFix Experts",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#EF5350"
-    }
+    "imageUrl": "https://i.ibb.co/y6Rh1JW/Charging-Port-Repair.webp",
+    "serviceName": "Charging Port Repair",
+    "price": "$30",
+    "serviceArea": "Electro Care Tech Center",
+    "description": "Having trouble charging your device? Our Charging Port Repair service is here to help. At Electro Care, we specialize in repairing damaged charging ports on smartphones and tablets. Whether your device isn't charging at all or you're experiencing intermittent charging issues, our skilled technicians can diagnose and repair the problem quickly and effectively. With our affordable pricing and convenient service locations, Electro Care makes it easy to get your device back up and running. Don't let a faulty charging port slow you down – trust Electro Care for all your charging port repair needs.",
+    "providerEmail": "mamudmdemon@gmail.com",
+    "providerImage": "https://lh3.googleusercontent.com/a/ACg8ocKypKOIIu1WnANTGCJlz-5gz6PL6DE4sCOAKzmo7Li58Yl6cZdh=s96-c",
+    "providerName": "MD. EMON MIAH"
   },
   {
-    "serviceProviderName": "E-Tech Repairs",
-    "serviceProviderImage": "provider_images/e_tech_repairs.jpg",
-    "serviceLocation": "E-Tech Repair Center",
-    "singleService": {
-      "serviceImage": "service_images/charging_port_repair.jpg",
-      "serviceName": "Charging Port Repair",
-      "serviceDescription": "Expert repair service for damaged charging ports on smartphones and tablets.",
-      "serviceProviderInfo": {
-        "image": "provider_images/e_tech_repairs.jpg",
-        "name": "E-Tech Repairs"
-      },
-      "servicePrice": "$30",
-      "bookNowButtonColor": "#4CAF50",
-      "providerEmail": "etech@example.com",
-      "providerName": "E-Tech Repairs",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#42A5F5"
-    }
+    "imageUrl": "https://i.ibb.co/LR5tq4m/Software-Update.jpg",
+    "serviceName": "Software Update",
+    "price": "$20",
+    "serviceArea": "Electro Care Service Center",
+    "description": "Keep your devices running smoothly with our Software Update service. At Electro Care, we understand the importance of staying up-to-date with the latest software releases. Our experienced technicians can update your device's operating system and software applications to ensure optimal performance and security. Whether you're looking to improve device functionality or protect against security vulnerabilities, Electro Care has you covered. With our fast and reliable service, you can enjoy peace of mind knowing your device is running the latest software. Stay ahead of the curve with Electro Care's Software Update service.",
+    "providerEmail": "mamudmdemon@gmail.com",
+    "providerImage": "https://lh3.googleusercontent.com/a/ACg8ocKypKOIIu1WnANTGCJlz-5gz6PL6DE4sCOAKzmo7Li58Yl6cZdh=s96-c",
+    "providerName": "MD. EMON MIAH"
   },
   {
-    "serviceProviderName": "FixitNow Services",
-    "serviceProviderImage": "provider_images/fixitnow_services.jpg",
-    "serviceLocation": "FixitNow Service Center",
-    "singleService": {
-      "serviceImage": "service_images/software_update.jpg",
-      "serviceName": "Software Update",
-      "serviceDescription": "Keep your devices up-to-date with the latest software versions for improved performance and security.",
-      "serviceProviderInfo": {
-        "image": "provider_images/fixitnow_services.jpg",
-        "name": "FixitNow Services"
-      },
-      "servicePrice": "$20",
-      "bookNowButtonColor": "#FF7043",
-      "providerEmail": "fixitnow@example.com",
-      "providerName": "FixitNow Services",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#66BB6A"
-    }
+    "imageUrl": "https://i.ibb.co/q5XdzwW/Water-Damage-Repair.jpg",
+    "serviceName": "Water Damage Repair",
+    "price": "$60",
+    "serviceArea": "Electro Care Repair Center",
+    "description": "Accidentally spilled water on your device? Don't panic – Electro Care's Water Damage Repair service is here to help. Our skilled technicians are experienced in repairing devices damaged by water or liquid spills. From thorough cleaning and drying to component repair and replacement, we'll do whatever it takes to restore your device to its pre-damage condition. Time is of the essence when it comes to water damage, so don't delay – bring your device to Electro Care as soon as possible for prompt and professional repair. Trust Electro Care to rescue your device from water damage woes.",
+    "providerEmail": "mamudmdemon@gmail.com",
+    "providerImage": "https://lh3.googleusercontent.com/a/ACg8ocKypKOIIu1WnANTGCJlz-5gz6PL6DE4sCOAKzmo7Li58Yl6cZdh=s96-c",
+    "providerName": "MD. EMON MIAH"
   },
   {
-    "serviceProviderName": "QuickFix Repairs",
-    "serviceProviderImage": "provider_images/quickfix_repairs.jpg",
-    "serviceLocation": "QuickFix Repair Shop",
-    "singleService": {
-      "serviceImage": "service_images/water_damage_repair.jpg",
-      "serviceName": "Water Damage Repair",
-      "serviceDescription": "Professional repair service for devices damaged by water or liquid spills.",
-      "serviceProviderInfo": {
-        "image": "provider_images/quickfix_repairs.jpg",
-        "name": "QuickFix Repairs"
-      },
-      "servicePrice": "$60",
-      "bookNowButtonColor": "#FFA726",
-      "providerEmail": "quickfix@example.com",
-      "providerName": "QuickFix Repairs",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#42A5F5"
-    }
+    "imageUrl": "https://i.ibb.co/gJYJWRS/Screen-Repair.jpg",
+    "serviceName": "Screen Repair",
+    "price": "$70",
+    "serviceArea": "Electro Care Tech Solutions",
+    "description": "Cracked or shattered screen? Don't let a damaged display ruin your device experience – Electro Care's Screen Repair service has you covered. Our skilled technicians specialize in repairing cracked screens on smartphones and tablets. Whether your device has a minor crack or a completely shattered screen, we have the expertise to restore it to its original condition. Using high-quality replacement parts and precision tools, we'll have your screen looking brand new in no time. Say goodbye to unsightly cracks and hello to a pristine display with Electro Care's Screen Repair service.",
+    "providerEmail": "mamudemon@gmail.com",
+    "providerImage": "https://i.ibb.co/ZWrTthm/About-User.jpg",
+    "providerName": "Usama"
   },
   {
-    "serviceProviderName": "TechSavvy Solutions",
-    "serviceProviderImage": "provider_images/techsavvy_solutions.jpg",
-    "serviceLocation": "TechSavvy Repair Center",
-    "singleService": {
-      "serviceImage": "service_images/screen_repair.jpg",
-      "serviceName": "Screen Repair",
-      "serviceDescription": "Professional repair service for cracked or damaged screens on smartphones and tablets.",
-      "serviceProviderInfo": {
-        "image": "provider_images/techsavvy_solutions.jpg",
-        "name": "TechSavvy Solutions"
-      },
-      "servicePrice": "$70",
-      "bookNowButtonColor": "#4CAF50",
-      "providerEmail": "techsavvy@example.com",
-      "providerName": "TechSavvy Solutions",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#EF5350"
-    }
+    "imageUrl": "https://i.ibb.co/cD7pp2X/Camera-Repair.jpg",
+    "serviceName": "Camera Repair",
+    "price": "$50",
+    "serviceArea": "Electro Care Repair Shop",
+    "description": "Capture life's moments with confidence – Electro Care's Camera Repair service ensures your device's camera is always ready for action. Whether you're experiencing blurry images, a malfunctioning lens, or other camera issues, our skilled technicians can diagnose and repair the problem quickly and effectively. From lens replacements to sensor repairs, we use genuine replacement parts and state-of-the-art tools to ensure optimal performance and image quality. Don't let camera issues hold you back – trust Electro Care for all your camera repair needs.",
+    "providerEmail": "mamudmdemon@gmail.com",
+    "providerImage": "https://lh3.googleusercontent.com/a/ACg8ocKypKOIIu1WnANTGCJlz-5gz6PL6DE4sCOAKzmo7Li58Yl6cZdh=s96-c",
+    "providerName": "MD. EMON MIAH"
   },
   {
-    "serviceProviderName": "FixRight Repairs",
-    "serviceProviderImage": "provider_images/fixright_repairs.jpg",
-    "serviceLocation": "FixRight Repair Shop",
-    "singleService": {
-      "serviceImage": "service_images/camera_repair.jpg",
-      "serviceName": "Camera Repair",
-      "serviceDescription": "Expert repair service for cameras on smartphones and digital cameras.",
-      "serviceProviderInfo": {
-        "image": "provider_images/fixright_repairs.jpg",
-        "name": "FixRight Repairs"
-      },
-      "servicePrice": "$50",
-      "bookNowButtonColor": "#66BB6A",
-      "providerEmail": "fixright@example.com",
-      "providerName": "FixRight Repairs",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#FF7043"
-    }
-  },
-  {
-    "serviceProviderName": "RapidFix Solutions",
-    "serviceProviderImage": "provider_images/rapidfix_solutions.jpg",
-    "serviceLocation": "RapidFix Repair Center",
-    "singleService": {
-      "serviceImage": "service_images/data_recovery.jpg",
-      "serviceName": "Data Recovery",
-      "serviceDescription": "Professional data recovery service for lost or corrupted data on storage devices.",
-      "serviceProviderInfo": {
-        "image": "provider_images/rapidfix_solutions.jpg",
-        "name": "RapidFix Solutions"
-      },
-      "servicePrice": "$80",
-      "bookNowButtonColor": "#FFA726",
-      "providerEmail": "rapidfix@example.com",
-      "providerName": "RapidFix Solutions",
-      "currentUserEmail": "",
-      "currentUserName": "",
-      "purchaseButtonColor": "#FF7043"
-    }
+    "imageUrl": "https://i.ibb.co/jf2X6wB/Data-Recovery.jpg",
+    "serviceName": "Data Recovery",
+    "price": "$80",
+    "serviceArea": "Electro Care Tech Solutions",
+    "description": "Lost important files due to accidental deletion, formatting, or hardware failure? Don't panic – Electro Care's Data Recovery service is here to help. Our experienced technicians specialize in retrieving lost or corrupted data from a variety of storage devices, including hard drives, solid-state drives, USB drives, and memory cards. Using advanced data recovery techniques and state-of-the-art equipment, we'll work tirelessly to recover your valuable files and documents. Trust Electro Care to recover your data quickly, securely, and affordably.",
+    "providerEmail": "mamudemon@gmail.com",
+    "providerImage": "https://i.ibb.co/ZWrTthm/About-User.jpg",
+    "providerName": "Usama"
   }
 ]
