@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import PropTypes from "prop-types";
+
 import {
   Avatar,
   Button,
@@ -28,11 +29,13 @@ const Service = ({ service }) => {
     description,
     providerImage,
     providerName,
-    _id
+    _id,
   } = service;
   return (
     <div>
       <Card
+        data-aos="fade-up"
+        data-aos-duration="2000"
         color="transparent"
         shadow={false}
         className="w-full max-w-[26rem] border-2 border-gray-300 px-4 h-80"

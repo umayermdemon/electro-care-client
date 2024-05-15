@@ -17,7 +17,7 @@ const PopularServices = () => {
         Our Popular Services
       </h1>
       <h1 className="text-base md:text-xl lg:text-2xl font-bold text-center mb-6 p-2 rounded-full  bg-gradient-to-l from-indigo-500">
-      What Kind of Repairs Can We Do?
+        What Kind of Repairs Can We Do?
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mx-2">
         {services?.slice(0, 6).map((service, idx) => (
@@ -25,13 +25,15 @@ const PopularServices = () => {
         ))}
       </div>
       <div>
-        <Link to='/services'>
-        <Button
-          size="lg"
-          className="my-4  text-white rounded-lg  bg-gradient-to-r from-indigo-500 flex mx-auto"
-        >
-          Show All
-        </Button>
+        <Link to="/services">
+          <Button
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            size="lg"
+            className="my-4  text-white rounded-lg  bg-gradient-to-r from-indigo-500 flex mx-auto"
+          >
+            Show All
+          </Button>
         </Link>
       </div>
     </div>

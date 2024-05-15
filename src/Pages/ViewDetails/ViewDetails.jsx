@@ -29,6 +29,8 @@ const ViewDetails = () => {
       </Helmet>
       <Card className=" max-w-full lg:h-[577px] mx-2 lg:mx-6 my-3  lg:flex-row">
         <CardHeader
+          data-aos="fade-down"
+          data-aos-duration="2000"
           shadow={false}
           floated={false}
           className="  m-0  lg:w-3/5 shrink-0 rounded-r-none"
@@ -39,7 +41,9 @@ const ViewDetails = () => {
             className="h-full w-full object-cover"
           />
         </CardHeader>
-        <CardBody className="p-2 lg:p-4">
+        <CardBody
+         data-aos="fade-up"
+         data-aos-duration="2000" className="p-2 lg:p-4">
           <Typography variant="h4" color="blue-gray" className="mb-2">
             {serviceName}
           </Typography>
