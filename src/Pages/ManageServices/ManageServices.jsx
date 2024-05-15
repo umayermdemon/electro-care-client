@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import ManageService from "../../Components/ManageService/ManageService";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const ManageServices = () => {
   const { user } = useContext(AuthContext);
@@ -49,6 +50,9 @@ const ManageServices = () => {
   }, [user.email]);
   return (
     <div className=" flex flex-col items-center justify-center">
+      <Helmet>
+        <title>ElectroCare | Manage Services</title>
+      </Helmet>
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
         Manage Your Services
       </h1>

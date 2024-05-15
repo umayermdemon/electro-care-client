@@ -1,4 +1,5 @@
 import { Button, Input, Textarea } from "@material-tailwind/react";
+import { Helmet } from "react-helmet";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -50,6 +51,9 @@ const UpdateForm = () => {
   };
   return (
     <div className="bg-white md:container lg:container mx-1 md:mx-auto lg:mx-auto">
+      <Helmet>
+        <title>ElectroCare | Update Service</title>
+      </Helmet>
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
         Update Your Service
       </h1>

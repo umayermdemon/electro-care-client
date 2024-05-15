@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { Button, Card, Typography } from "@material-tailwind/react";
+import { Helmet } from "react-helmet";
 
 const BookedServices = () => {
   const { user } = useContext(AuthContext);
@@ -16,6 +17,9 @@ const BookedServices = () => {
 
   return (
     <div className="min-h-[calc(100vh-326px)]">
+      <Helmet>
+        <title>ElectroCare | Booked Services</title>
+      </Helmet>
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
         Booked Services
       </h1>

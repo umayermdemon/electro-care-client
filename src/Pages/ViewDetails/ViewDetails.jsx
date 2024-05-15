@@ -5,6 +5,7 @@ import {
   CardHeader,
   Typography,
 } from "@material-tailwind/react";
+import { Helmet } from "react-helmet";
 import { Link, useLoaderData } from "react-router-dom";
 
 const ViewDetails = () => {
@@ -23,6 +24,9 @@ const ViewDetails = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>ElectroCare | View Details</title>
+      </Helmet>
       <Card className=" max-w-full lg:h-[577px] mx-2 lg:mx-6 my-3  lg:flex-row">
         <CardHeader
           shadow={false}

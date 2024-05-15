@@ -7,6 +7,7 @@ import registerImg from "/register.png";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-toastify";
 import { updateProfile } from "firebase/auth";
+import { Helmet } from "react-helmet";
 
 
 const Register = () => {
@@ -78,6 +79,9 @@ const Register = () => {
   };
   return (
     <div>
+      <Helmet>
+        <title>ElectroCare | Register</title>
+      </Helmet>
       <Card className="container mx-auto pl-48 md:pl-36 lg:pl-36 min-h-[calc(100vh-310px)] items-center justify-center shadow-none gap-48  flex-row">
         <div>
           <div className="space-y-4 mt-4">

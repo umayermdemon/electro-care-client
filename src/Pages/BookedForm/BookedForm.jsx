@@ -3,6 +3,7 @@ import { useContext } from "react";
 import {  useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 
 const BookedForm = () => {
@@ -71,6 +72,9 @@ const BookedForm = () => {
   };
   return (
     <div className="bg-white md:container lg:container mx-1 md:mx-auto lg:mx-auto">
+      <Helmet>
+        <title>ElectroCare | Book Now</title>
+      </Helmet>
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
         Book Your Service
       </h1>
