@@ -1,50 +1,31 @@
-import { Button, Input } from "@material-tailwind/react";
-import { useContext } from "react";
-import {  useLoaderData, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../Provider/AuthProvider";
+import { Button, Input, Textarea } from "@material-tailwind/react";
+import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const UpdateForm = () => {
-  const {user}=useContext(AuthContext);
+  const service = useLoaderData();
+  const { serviceName,serviceArea,imageUrl,price,description,_id } =
+    service;
   const navigate=useNavigate()
-  const service=useLoaderData()
-  const {
-    _id,
-    imageUrl,
-    price,
-    providerEmail,
-    providerName,
-    serviceName,
-  } = service;
-  const handleModal = (e) => {
+  const handleUpdate = (e) => {
     e.preventDefault();
     const form = e.target;
-    const serviceId = form.serviceId.value;
     const serviceName = form.serviceName.value;
-    const serviceImage = form.serviceImage.value;
+    const serviceArea = form.serviceArea.value;
+    const description = form.description.value;
+    const serviceImage = form.imageUrl.value;
     const price = form.price.value;
-    const providerName = form.providerName.value;
-    const providerEmail = form.providerEmail.value;
-    const serviceTakingDate = form.serviceTakingDate.value;
-    const specialInstruction = form.specialInstruction.value;
-    const userEmail=user.email;
-    const serviceStatus="Pending"
     const bookedService = {
-      serviceId,
       serviceName,
       serviceImage,
       price,
-      providerName,
-      providerEmail,
-      serviceTakingDate,
-      specialInstruction,
-      serviceStatus,
-      userEmail
+      serviceArea,
+      description
     };
     console.log(bookedService);
 
-    fetch('http://localhost:5000/booked',{
-      method:'POST',
+    fetch(`http://localhost:5000/services/${_id}`,{
+      method:'PATCH',
       headers:{
         'content-type':'application/json'
       },
@@ -53,19 +34,19 @@ const UpdateForm = () => {
     })
     .then(res=>res.json())
     .then(data=>{
-      if(data.insertedId){
+      console.log(data)
+      if(data.modifiedCount>0){
         Swal.fire({
           title: 'Success!',
-          text: 'Service Successfully Booked ',
+          text: 'Service Successfully Updated ',
           icon: 'success',
         })
-        
+
       }
-      navigate('/bookedServices')
+      navigate('/manageServices')
 
     })
 
-    
   };
   return (
     <div className="bg-white md:container lg:container mx-1 md:mx-auto lg:mx-auto">
@@ -73,43 +54,31 @@ const UpdateForm = () => {
         Update Your Service
       </h1>
       <form
-        onSubmit={handleModal}
-        className="border border-blue-900 space-y-4 lg:space-y-8 rounded-xl lg:h-[513px] p-1 md:p-8 lg:p-8 pt-8 lg:pt-16 my-4"
+        onSubmit={handleUpdate}
+        className="border border-blue-900 space-y-4 lg:space-y-8 rounded-xl lg:h-[513px] p-4 lg:p-8 lg:pt-16 my-4"
       >
-        <div className="flex flex-row gap-2 ">
-          <Input name="serviceId" label="Service Id" size="lg"     defaultValue={_id} readOnly/>
-          <Input name="serviceName" label="Service Name" size="lg" defaultValue={serviceName} readOnly/>
+        <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8">
+          <Input name="serviceName" label="Service Name" size="lg" defaultValue={serviceName} />
+          <Input name="serviceArea" label="Service Area" size="lg" defaultValue={serviceArea} />
         </div>
-        <div className="flex flex-row gap-2 ">
-          <Input name="serviceImage" label="Service Image" size="lg" defaultValue={imageUrl} readOnly/>
-          <Input name="price" label="Price" size="lg"  defaultValue={price} readOnly/>
+        <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8 ">
+          <Input name="imageUrl" label="Image Url" size="lg" defaultValue={imageUrl} />
+          <Input name="price" label="Price" size="lg"  defaultValue={price}/>
         </div>
-        <div className="flex flex-row gap-2 ">
-          <Input name="providerName" label="Provider Name" size="lg"   defaultValue={providerName} readOnly/>
-          <Input name="providerEmail" label="Provider Email" size="lg" defaultValue={providerEmail}  readOnly/>
-        </div>
-        <div className="flex flex-row gap-2 ">
-          <Input name="currentUserName" label="Current User Name" size="lg"   defaultValue={user.displayName} readOnly/>
-          <Input name="currentUserEmail" label="Current User Email" size="lg" defaultValue={user.email}  readOnly/>
-        </div>
-        <div className="flex flex-row gap-2 ">
-          <Input
-            name="serviceTakingDate"
-            type="date"
-            label="Service Taking Date"
+        <div>
+          <Textarea
+            name="description"
+            label="Description"
             size="lg"
-            required
-          />
-          <Input
-            name="specialInstruction"
-            label="Special instruction"
-            size="lg"
-            
+            className="h-48"
+           
+            defaultValue={description}
           />
         </div>
         <div className="flex items-center justify-center">
           <Button type="submit" className="bg-gradient-to-r from-indigo-500 ">
-            Booked
+            {" "}
+            Update Service{" "}
           </Button>
         </div>
       </form>

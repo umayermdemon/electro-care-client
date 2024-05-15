@@ -17,6 +17,7 @@ const BookedForm = () => {
     providerName,
     serviceName,
   } = service;
+  console.log(service)
   const handleModal = (e) => {
     e.preventDefault();
     const form = e.target;

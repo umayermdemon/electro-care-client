@@ -2,6 +2,7 @@
 import PropTypes from "prop-types";
 import {
   Avatar,
+  Button,
   Card,
   CardBody,
   CardHeader,
@@ -77,6 +78,11 @@ const ManageService = ({ service, handleDelete }) => {
             <Link to={`/updateForm/${_id}`}>
               <MdEdit className="text-2xl text-indigo-500" />
               {/* <Button className="bg-gradient-to-l from-indigo-500 " ></Button> */}
+            </Link>
+            <Link to={`/viewDetails/${_id}`}>
+              <Button className="bg-gradient-to-l from-indigo-500 " fullWidth>
+                View Details
+              </Button>
             </Link>
             <MdDelete
               onClick={() => handleDelete(_id)}
