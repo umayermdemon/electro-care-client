@@ -19,7 +19,7 @@ const ManageServices = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/services/${id}`, {
+        fetch(`https://electro-care-server.vercel.app/services/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())
@@ -44,7 +44,7 @@ const ManageServices = () => {
     //
   };
   useEffect(() => {
-    fetch(`http://localhost:5000/services?email=${user.email}`)
+    fetch(`https://electro-care-server.vercel.app/services?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setManageServices(data));
   }, [user.email]);

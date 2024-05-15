@@ -46,7 +46,7 @@ const BookedForm = () => {
     };
     console.log(bookedService);
 
-    fetch('http://localhost:5000/booked',{
+    fetch('https://electro-care-server.vercel.app/booked',{
       method:'POST',
       headers:{
         'content-type':'application/json'

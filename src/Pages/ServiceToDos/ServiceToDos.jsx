@@ -8,7 +8,7 @@ const ServiceToDo = () => {
   const { user } = useContext(AuthContext);
   const [booked, setBooked] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:5000/booked?email=${user.email}`)
+    fetch(`https://electro-care-server.vercel.app/booked?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setBooked(data));
   }, [user.email]);

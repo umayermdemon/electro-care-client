@@ -35,7 +35,7 @@ const router=createBrowserRouter([
       {
         path:'/services',
         element:<Services/>,
-        loader: ()=>fetch('http://localhost:5000/services')
+        loader: ()=>fetch('https://electro-care-server.vercel.app/services')
       },
       {
         path:'/addService',
@@ -56,17 +56,17 @@ const router=createBrowserRouter([
       {
         path:'/viewDetails/:id',
         element:<PrivateRoute><ViewDetails/></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+        loader:({params})=>fetch(`https://electro-care-server.vercel.app/services/${params.id}`)
       },
       {
         path:'/bookedForms/:id',
         element:<PrivateRoute><BookedForm/></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+        loader:({params})=>fetch(`https://electro-care-server.vercel.app/services/${params.id}`)
       },
       {
         path:'/updateForm/:id',
         element:<PrivateRoute><UpdateForm/></PrivateRoute>,
-        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+        loader:({params})=>fetch(`https://electro-care-server.vercel.app/services/${params.id}`)
       },
     ]
   }

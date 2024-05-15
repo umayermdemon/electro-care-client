@@ -25,7 +25,7 @@ const UpdateForm = () => {
     };
     console.log(bookedService);
 
-    fetch(`http://localhost:5000/services/${_id}`,{
+    fetch(`https://electro-care-server.vercel.app/services/${_id}`,{
       method:'PATCH',
       headers:{
         'content-type':'application/json'
