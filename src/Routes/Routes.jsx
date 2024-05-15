@@ -9,7 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import AddService from "../Pages/AddService/AddService";
 import ManageService from "../Pages/ManageServices/ManageServices";
 import BookedServices from "../Pages/BookedServices/BookedServices";
-import ServiceToDo from "../Pages/ServiceToDo/ServiceToDo";
+import ServiceToDo from "../Pages/ServiceToDos/ServiceToDos";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import BookedForm from "../Pages/BookedForm/BookedForm";
 import UpdateForm from "../Pages/UpdateForm/UpdateForm";
