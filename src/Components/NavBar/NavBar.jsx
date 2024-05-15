@@ -88,7 +88,7 @@ function NavListMenu() {
           Add Service
         </Button>
       </Link>
-      <Link to="/manageService">
+      <Link to="/manageServices">
         <Button className="w-44 p-4 text-black bg-[#FBA529]">
           Manage Service
         </Button>

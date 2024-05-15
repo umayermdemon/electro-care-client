@@ -4,8 +4,7 @@ import {  useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import Swal from "sweetalert2";
 
-
-const BookedForm = () => {
+const UpdateForm = () => {
   const {user}=useContext(AuthContext);
   const navigate=useNavigate()
   const service=useLoaderData()
@@ -71,7 +70,7 @@ const BookedForm = () => {
   return (
     <div className="bg-white md:container lg:container mx-1 md:mx-auto lg:mx-auto">
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">
-        Book Your Service
+        Update Your Service
       </h1>
       <form
         onSubmit={handleModal}
@@ -118,4 +117,4 @@ const BookedForm = () => {
   );
 };
 
-export default BookedForm;
+export default UpdateForm;

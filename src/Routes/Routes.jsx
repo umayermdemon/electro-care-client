@@ -7,11 +7,12 @@ import Services from "../Pages/Services/Services";
 import Register from "../Pages/Register/Register";
 import PrivateRoute from "./PrivateRoute";
 import AddService from "../Pages/AddService/AddService";
-import ManageService from "../Pages/ManageService/ManageService";
+import ManageService from "../Pages/ManageServices/ManageServices";
 import BookedServices from "../Pages/BookedServices/BookedServices";
 import ServiceToDo from "../Pages/ServiceToDo/ServiceToDo";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import BookedForm from "../Pages/BookedForm/BookedForm";
+import UpdateForm from "../Pages/UpdateForm/UpdateForm";
 
 const router=createBrowserRouter([
   {
@@ -41,7 +42,7 @@ const router=createBrowserRouter([
         element:<PrivateRoute><AddService/></PrivateRoute>
       },
       {
-        path:'/manageService',
+        path:'/manageServices',
         element:<PrivateRoute><ManageService/></PrivateRoute>
       },
       {
@@ -60,6 +61,11 @@ const router=createBrowserRouter([
       {
         path:'/bookedForms/:id',
         element:<PrivateRoute><BookedForm/></PrivateRoute>,
+        loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
+      },
+      {
+        path:'/updateForm/:id',
+        element:<PrivateRoute><UpdateForm/></PrivateRoute>,
         loader:({params})=>fetch(`http://localhost:5000/services/${params.id}`)
       },
     ]

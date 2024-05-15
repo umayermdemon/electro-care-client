@@ -50,15 +50,15 @@ const AddService = () => {
       <h1 className="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 my-4">Add Your Service</h1>
       <form onSubmit={handleAddService} className="border border-blue-900 space-y-4 lg:space-y-8 rounded-xl lg:h-[513px] p-4 lg:p-8 lg:pt-16 my-4">
         <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8">
-          <Input name="serviceName"  label="Service Name" size="lg"/>
-          <Input name="serviceArea"  label="Service Area" size="lg"/>
+          <Input required name="serviceName"  label="Service Name" size="lg"/>
+          <Input required name="serviceArea"  label="Service Area" size="lg"/>
         </div>
         <div className="flex flex-col md:flex-row lg:flex-row gap-4 md:gap-8 lg:gap-8 ">
-          <Input name="imageUrl"  label="Image Url" size="lg"/>
-          <Input name="price"  label="Price" size="lg"/>
+          <Input required name="imageUrl"  label="Image Url" size="lg"/>
+          <Input required name="price"  label="Price" size="lg"/>
         </div>
         <div >
-          <Textarea name="description" label="Description"  size="lg" className="h-48"/>
+          <Textarea name="description" label="Description"  size="lg" className="h-48" required/>
         </div>
         <div className="flex items-center justify-center">
           <Button type="submit" className="bg-gradient-to-r from-indigo-500 "> Add Service </Button>
