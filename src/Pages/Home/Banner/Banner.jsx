@@ -8,9 +8,7 @@ const Banner = () => {
         alt=""
         className="w-full h-[300px] md:h-[350px] lg:h-[820px] object-fill"
       />
-      <div
-        className="bg-[#0C336A] opacity-80 absolute flex items-center justify-center text-white w-1/2 top-0 h-[300px] md:h-[350px] lg:h-[820px]"
-      >
+      <div className="bg-[#0C336A] opacity-80 absolute flex items-center justify-center text-white w-1/2 top-0 h-[300px] md:h-[350px] lg:h-[820px]">
         <div className="text-justify flex p-2 md:w-2/3 lg:w-1/2 flex-col  justify-end space-y-2 md:space-y-4 lg:space-y-4">
           <h1
             data-aos="zoom-in"
