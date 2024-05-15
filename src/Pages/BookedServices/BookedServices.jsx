@@ -5,14 +5,12 @@ import { Helmet } from "react-helmet";
 
 const BookedServices = () => {
   const { user } = useContext(AuthContext);
-  console.log(user.email);
   const [booked, setBooked] = useState([]);
   useEffect(() => {
     fetch(`http://localhost:5000/booked?email=${user.email}`)
       .then((res) => res.json())
       .then((data) => setBooked(data));
   }, [user.email]);
-  console.log(booked);
   const TABLE_HEAD = ["Service Name", "Image", "Price", "Service Status"];
 
   return (
