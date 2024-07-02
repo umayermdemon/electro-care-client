@@ -21,7 +21,7 @@ Welcome to **ElectroCare**, your one-stop solution for all electronic item repai
 - Database: MongoDB
 
 ## Cloning and Running Locally
-1. Clone the repository: `git clone https://github.com/your-username/ElectroCare.git`
+1. Clone the repository: `git clone https://github.com/umayermdemon/electro-care-client.git`
 2. Navigate to the project directory: `cd ElectroCare`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
