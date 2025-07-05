@@ -28,7 +28,7 @@ const PopularServices = () => {
         <Link to="/services">
           <Button
             data-aos="fade-up"
-            data-aos-duration="3000"
+            data-aos-duration="2000"
             size="lg"
             className="my-4  text-white rounded-lg  bg-gradient-to-r from-indigo-500 flex mx-auto"
           >
